@@ -1,6 +1,6 @@
 <div id="wrapper">
     <!--=============== content-holder ===============-->
-    <div class="content-holder elem scale-bg2 transition3">
+    <div class="content-holder elem transition3">
         <!-- Page title -->
         <div class="dynamic-title"><?php the_title(); ?></div>
         <!-- Page title  end-->
