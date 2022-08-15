@@ -3,7 +3,8 @@
 /**
  * The main template file
  */
-get_header(); ?>
+get_header();
+get_template_part('templates/headers/header-wrapper'); ?>
 <div class="content">
     <!--  blog-inner -->
     <div class="blog-inner">
