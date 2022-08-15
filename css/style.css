@@ -44,7 +44,6 @@
 /*-------------General Style---------------------------------------*/
 html{
 	overflow-x:hidden !important;
-	height:100%;
 }
 body{
 	margin: 0;
@@ -57,9 +56,15 @@ body{
 	height:100%;
 	text-align:center;
 }
+
 @-o-viewport {width: device-width;}
 @-ms-viewport {width: device-width;}
 @viewport {width: device-width;}
+
+body.admin-bar {
+  height: calc(100% - 32px);
+}
+
 /*--------------Typography--------------------------------------*/
 h1 {
 	font-size: 4.46666666667em;
@@ -197,6 +202,12 @@ blockquote p {
 	z-index:2;
 	opacity:1;
 }
+
+.admin-bar #main {
+  height:calc(100% - 32px);
+  top: 32px;
+}
+
 #wrapper{
 	height:100%;
 	margin-left:0;
@@ -334,7 +345,7 @@ blockquote p {
 }
 /*------   Header  ------------------------------------------------------*/
 header {
-	position:fixed;
+	position:absolute;
 	top:-62px;
 	left:0;
 	width:100%;
