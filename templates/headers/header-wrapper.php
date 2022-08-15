@@ -1,4 +1,3 @@
-<div id="wrapper">
     <!--=============== content-holder ===============-->
     <div class="content-holder elem transition3">
         <!-- Page title -->

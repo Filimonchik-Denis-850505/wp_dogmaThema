@@ -25,4 +25,4 @@
                         <!-- share  end-->
                 </header>
                 <!-- Header   end-->
-                <?php get_template_part( 'templates/headers/header-wrapper' ); ?>
+                <div id="wrapper">
