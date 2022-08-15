@@ -14,11 +14,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-        <div class="loader">
-                <div class="tm-loader">
-                        <div id="circle"></div>
-                </div>
-        </div>
         <!--================= main start ================-->
         <div id="main">
         <?php get_template_part( 'templates/headers/header-navButton' ); ?>

@@ -1,14 +1,3 @@
-// preload ------------------
-$(window).load(function() {
-    "use strict";
-    $(".loader").fadeOut(500, function() {
-        $("#main").animate({
-            opacity: "1"
-        }, 500);
-        contanimshow();
-    });
-});
-
 $("body").append('<div class="l-line"><span></span></div>');
 // all functions ------------------
 function initDogma() {
@@ -639,9 +628,6 @@ function initDogma() {
         ac();
     });
 // Init your functions here ------------------
-
-
-
 }
 
 function initvideo() {
@@ -673,32 +659,8 @@ function initvideo() {
 
 }
 
-// show hide content  ------------------
-function contanimshow() {
-    setTimeout(function() {
-    	$(".elem").removeClass("scale-bg2");
-    }, 450);
-    var a = window.location.href;
-    var b = $(".dynamic-title").text();
-    $(".header-title a").attr("href", a);
-    $(".header-title a").html(b);
-}
-
-function contanimhide() {
-    setTimeout(function() {
-        $(".elem").addClass("scale-bg2");
-    }, 650);
-    $(".show-share").addClass("isShare");
-}
 // Init core  ------------------
 $(function() {
-    $.coretemp({
-        reloadbox: "#wrapper",
-        loadErrorMessage: "<h2>404</h2> <br> page not found.",
-        loadErrorBacklinkText: "Back to the last page",
-        outDuration: 250,
-        inDuration: 150
-    });
     readyFunctions();
     $(document).on({
         ksctbCallback: function() {

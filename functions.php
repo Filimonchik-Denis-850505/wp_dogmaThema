@@ -8,7 +8,6 @@ function test_style_func() {
     
     wp_enqueue_script( 'jquery' );
     wp_enqueue_script( 'test_core', get_template_directory_uri() . '/js/core.js', array('jquery') );
-    wp_enqueue_script( 'test_jpreloader.min', get_template_directory_uri() . '/js/jpreloader.min.js', array('jquery') );
     
     wp_enqueue_script( 'test_plugins', get_template_directory_uri() . '/js/plugins.js', array('jquery') );
     wp_enqueue_script( 'test_scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery') );
