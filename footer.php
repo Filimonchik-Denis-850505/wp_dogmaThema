@@ -38,11 +38,6 @@
 </div>
 <!--=============== google map ===============-->
 <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" type="text/javascript"></script>
-<!--=============== scripts  ===============-->
-<script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="js/plugins.js"></script>
-<script type="text/javascript" src="js/core.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
 </body>
 
 </html>
