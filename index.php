@@ -30,21 +30,14 @@ get_header(); ?>
         <!-- synh-wrap-holder -->
         <div class="synh-wrap-holder">
             <div class="synh-wrap">
+            <?php while ($catquery->have_posts()) : $catquery->the_post(); ?>
                 <div class="item">
-                    <h3> At posuere sem accumsan </h3>
-                    <h4> Lorem Ipsum has been the standard </h4>
+                    <h3> <?php the_title(); ?> </h3>
+                    <h4> <?php the_excerpt(); ?> </h4>
                     <a href="<?php the_permalink(); ?>" class="ajax btn anim-button   trans-btn   transition  fl-l"><span>View Project</span><i class="fa fa-eye"></i></a>
                 </div>
-                <div class="item">
-                    <h3> At posuere sem accumsan </h3>
-                    <h4> Lorem Ipsum has been the standard </h4>
-                    <a href="<?php the_permalink(); ?>" class="ajax btn anim-button   trans-btn   transition  fl-l"><span>View Project</span><i class="fa fa-eye"></i></a>
-                </div>
-                <div class="item">
-                    <h3> At posuere sem accumsan </h3>
-                    <h4> Lorem Ipsum has been the standard </h4>
-                    <a href="<?php the_permalink(); ?>" class="ajax btn anim-button   trans-btn   transition  fl-l"><span>View Project</span><i class="fa fa-eye"></i></a>
-                </div>
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
             </div>
         </div>
         <!-- synh-wrap-holder end  -->
