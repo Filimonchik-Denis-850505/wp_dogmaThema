@@ -13,7 +13,7 @@
                         <!--  Subnav  -->
                         <ul>
                             <li>
-                                <a href="/index.php" class="ajax">Slideshow </a>
+                                <a href="/" class="ajax">Slideshow </a>
                             </li>
                             <li>
                                 <a href="index2.html" class="ajax">Multi Slideshow 4</a>
