@@ -4,6 +4,7 @@
  * The main template file
  */
 get_header(); ?>
+
 <!--  Content -->
 <div class="content full-height no-padding home-content ">
     <!--full-height wrap -->
@@ -16,18 +17,13 @@ get_header(); ?>
         <div class="synh-slider-holder">
             <div class="overlay"></div>
             <div class="synh-slider owl-carousel">
-                <!-- 1 -->
-                <div class="item">
-                    <div class="bg" style="background-image:url(/wp-content/themes/dogmaThema/images/bg/1.jpg)"></div>
-                </div>
-                <!-- 2 -->
-                <div class="item">
-                    <div class="bg" style="background-image:url(/wp-content/themes/dogmaThema/images/bg/1.jpg)"></div>
-                </div>
-                <!-- 3 -->
-                <div class="item">
-                    <div class="bg" style="background-image:url(/wp-content/themes/dogmaThema/images/bg/1.jpg)"></div>
-                </div>
+                <?php $catquery = new WP_Query('cat=5&posts_per_page=3'); ?>
+                <?php while ($catquery->have_posts()) : $catquery->the_post(); ?>
+                    <div class="item">
+                        <div class="bg" style="background-image:url(<?php the_post_thumbnail_url(); ?>)"></div>
+                    </div>
+                <?php endwhile; ?>
+                <?php wp_reset_postdata(); ?>
             </div>
         </div>
         <!--slideshow-holder end -->
