@@ -1,8 +1,9 @@
 <?php
 
 /**
- * The main template file
+ Template Name: archive
  */
+
 get_header();
 get_template_part('templates/headers/header-wrapper'); ?>
 <div class="content">

@@ -60,11 +60,11 @@ get_template_part('templates/headers/header-wrapper');
             <div class="content-nav single-nav">
                 <ul>
                     <!-- get the prev page link -->
-                    <li><a href="<?php the_permalink(); ?>" class="ajax ln"><i class="fa fa fa-angle-left"></i></a></li>
+                    <li><a href="<?php echo the_permalink(); ?>" class="ajax ln"><i class="fa fa fa-angle-left"></i></a></li>
                     <li>
                         <div class="list">
                             <!-- get archive blog link -->
-                            <a href="<?php the_permalink(); ?>" class="ajax">
+                            <a href="<?php echo '/archive.php'; ?>" class="ajax">
                                 <span>
                                     <i class="b1 c1"></i><i class="b1 c2"></i><i class="b1 c3"></i>
                                     <i class="b2 c1"></i><i class="b2 c2"></i><i class="b2 c3"></i>
@@ -74,7 +74,7 @@ get_template_part('templates/headers/header-wrapper');
                         </div>
                     </li>
                     <!-- get the next page link -->
-                    <li><a href="<?php the_permalink(); ?>" class="ajax rn"><i class="fa fa fa-angle-right"></i></a></li>
+                    <li><a href="<?php echo the_permalink(); ?>" class="ajax rn"><i class="fa fa fa-angle-right"></i></a></li>
                 </ul>
             </div>
             <!--  content navigation end-->
