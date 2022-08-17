@@ -14,20 +14,7 @@ get_template_part('templates/headers/header-wrapper'); ?>
             <section>
                 <div class="container small-container">
                     <h3 class="dec-text"><?php the_title(); ?></h3>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum </p>
-                    <ul class="contact-list">
-                        <li><span>Adress </span>
-                            <a href="#">27th Brooklyn New York, NY 10065</a>
-                        </li>
-                        <li><span>Phone</span>
-                            <a href="#">+7(111)123456789</a>
-                        </li>
-                        <li>
-                            <span>E-mail </span>
-                            <a href="#">yourmail@domain.com</a>
-                        </li>
-                    </ul>
-                    <a href="#" class=" btn anim-button   trans-btn   transition  fl-l showform"><span>Write us</span><i class="fa fa-eye"></i></a>
+                    <p><?php the_content(); ?></p>
                 </div>
             </section>
         </div>
