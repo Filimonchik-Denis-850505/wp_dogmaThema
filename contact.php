@@ -1,4 +1,7 @@
 <?php
+/*
+Template Name: Contacts
+*/
 get_header();
 get_template_part('templates/headers/header-wrapper'); ?>
 <!-- TODO: дописать запись под контакты  -->
@@ -10,7 +13,7 @@ get_template_part('templates/headers/header-wrapper'); ?>
         <div class="align-content">
             <section>
                 <div class="container small-container">
-                    <h3 class="dec-text">Contacts</h3>
+                    <h3 class="dec-text"><?php the_title(); ?></h3>
                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum </p>
                     <ul class="contact-list">
                         <li><span>Adress </span>

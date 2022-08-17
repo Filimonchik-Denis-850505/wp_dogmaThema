@@ -1,4 +1,7 @@
 <?php
+/*
+Template Name: About
+*/
 get_header();
 get_template_part('templates/headers/header-wrapper'); ?>
 <!-- TODO: дописать запись Об  -->
@@ -6,7 +9,7 @@ get_template_part('templates/headers/header-wrapper'); ?>
 <div class="content full-height">
     <!--  fixed-column -->
     <div class="fixed-column">
-        <div class="bg" style="background-image:url(images/bg/1.jpg)"></div>
+        <div class="bg" style="background-image:url(<?php the_post_thumbnail_url();?>)"></div>
     </div>
     <!--  fixed-column end-->
     <!--  wrapper-inner -->
@@ -15,8 +18,8 @@ get_template_part('templates/headers/header-wrapper'); ?>
         <div class="align-content">
             <section>
                 <div class="container small-container">
-                    <h3 class="dec-text">Dogma studio</h3>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+                    <h3 class="dec-text"><?php the_title(); ?></h3>
+                    <p><?php the_content(); ?></p>
                     <a href="portfolio.html" class="ajax btn anim-button   trans-btn   transition  fl-l" target="_blank"><span>Our projects</span><i class="fa fa-eye"></i></a>
                 </div>
             </section>
