@@ -4,7 +4,6 @@ Template Name: About
 */
 get_header();
 get_template_part('templates/headers/header-wrapper'); ?>
-<!-- TODO: дописать запись Об  -->
 <!--  Content -->
 <div class="content full-height">
     <!--  fixed-column -->

@@ -4,7 +4,6 @@ Template Name: Services
 */
 get_header();
 get_template_part('templates/headers/header-wrapper'); ?>
-<!-- TODO: дописать записи под сервисы  -->
 <!--  Content -->
 <div class="content">
     <section>
