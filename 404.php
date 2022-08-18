@@ -11,9 +11,13 @@
 get_header();
 ?>
 <main id="site-content">
-
-	<a href="404.html" class="ajax">404</a>
-
+	<div class="back-link ">
+		<span>
+			<h2>404</h2><br>
+			page not found.
+		</span>
+		<a class="abl ajaxPageSwitchBacklink" <?php echo "href=\"javascript:history.go(-1)\""; ?>>Back to the last page</a>
+	</div>
 </main><!-- #site-content -->
 
 <?php
