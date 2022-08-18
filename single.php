@@ -42,7 +42,7 @@ the_post();
                 <div class="blog-text">
                     <?php the_content(); ?>
                     <ul class="taglist">
-                        <li><a href="#"><?php echo the_tags(); ?></a></li>
+                        <li><a href="#"><?php echo the_tags('Tags: ', '', ''); ?></a></li>
                     </ul>
                 </div>
             </article>

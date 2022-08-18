@@ -2210,10 +2210,11 @@ article {
 .taglist li {
 	float:left;
 	margin-right:4px;
-	margin-bottom:4px;
+	margin-bottom:40px;
 }
 .taglist li a {
 	padding:10px 20px;
+	margin-right: 5px;
 	float:left;
 	font-size:12px;
 	letter-spacing:2px;
