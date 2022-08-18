@@ -9,7 +9,7 @@
                         <!-- Nav button end -->
                         <!-- Logo-->
                         <div class="logo-holder">
-                                <a href="index.html" class="ajax"><img src="<?php echo get_home_url() ?>/wp-content/uploads/2022/08/logo.png">
+                                <?php the_custom_logo(); ?>
                         </div>
                         <!-- Logo  end-->
                         <!-- Header  title -->
