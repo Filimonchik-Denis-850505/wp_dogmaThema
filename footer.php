@@ -37,7 +37,7 @@
 <?php wp_footer(); ?>
 </div>
 <!--=============== google map ===============-->
-<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY" type="text/javascript"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAByWspMvYlZEFLF-PrtL0eomTHiiPvkKw" type="text/javascript"></script>
 </body>
 
 </html>
