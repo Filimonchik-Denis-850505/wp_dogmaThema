@@ -15,7 +15,8 @@ get_template_part('templates/headers/header-wrapper'); ?>
                 <div class="container small-container">
                     <h3 class="dec-text"><?php the_title(); ?></h3>
                     <p><?php the_content(); ?></p>
-                </div>
+                    <a href="#" class=" btn anim-button   trans-btn   transition  fl-l showform"><span>Write us</span><i class="fa fa-eye"></i></a>
+                </div>      
             </section>
         </div>
         <!--  align-content  end-->

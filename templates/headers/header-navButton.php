@@ -9,7 +9,7 @@
                         <!-- Nav button end -->
                         <!-- Logo-->
                         <div class="logo-holder">
-                                <a href="index.html" class="ajax"><img src="wp-content/themes/dogmaThema/images/logo.png" alt=""></a>
+                                <a href="index.html" class="ajax"><img src="<?php echo get_home_url() ?>/wp-content/uploads/2022/08/logo.png">
                         </div>
                         <!-- Logo  end-->
                         <!-- Header  title -->
