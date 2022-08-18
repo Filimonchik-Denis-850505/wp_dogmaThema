@@ -12,7 +12,7 @@ function test_style_func() {
     wp_enqueue_script( 'test_scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery') );
     wp_add_inline_script( 'jquery', '$ = jQuery;', 'after' );
 }
-
+add_theme_support( 'custom-logo' );
 add_theme_support('post-thumbnails');
 add_theme_support('menus');
 add_action('wp_enqueue_scripts', 'test_style_func');

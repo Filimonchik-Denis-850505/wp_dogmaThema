@@ -17,7 +17,7 @@ get_header(); ?>
         <div class="synh-slider-holder">
             <div class="overlay"></div>
             <div class="synh-slider owl-carousel">
-                <?php $catquery = new WP_Query('cat=5&posts_per_page=3'); ?>
+                <?php $catquery = new WP_Query('post_type="post"&posts_per_page=3'); ?>
                 <?php while ($catquery->have_posts()) : $catquery->the_post(); ?>
                     <div class="item">
                         <div class="bg" style="background-image:url(<?php the_post_thumbnail_url(); ?>)"></div>

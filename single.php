@@ -1,7 +1,6 @@
 <?php
 get_header();
 get_template_part('templates/headers/header-wrapper');
-the_post();
 ?>
 <div class="content">
     <section class="no-bg box-page">
@@ -42,7 +41,7 @@ the_post();
                 <div class="blog-text">
                     <?php the_content(); ?>
                     <ul class="taglist">
-                        <li><a href="#"><?php echo the_tags('Tags: ', '', ''); ?></a></li>
+                        <?php the_tags('<li>', '', '</li>'); ?>
                     </ul>
                 </div>
             </article>
