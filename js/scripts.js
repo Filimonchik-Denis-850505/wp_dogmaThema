@@ -203,7 +203,7 @@ function initDogma() {
         $(this).closest(".custom-slider-holder").find(csi).trigger("next.owl.carousel");
 		return false;
     });
-    $(".custom-sliderr-holder a.prev-slide").on("click", function() {
+    $(".custom-slider-holder a.prev-slide").on("click", function() {
         $(this).closest(".custom-slider-holder").find(csi).trigger("prev.owl.carousel");
 		return false;
     });
