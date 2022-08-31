@@ -11,39 +11,35 @@ get_template_part('templates/headers/header-wrapper'); ?>
         <div class="container">
             <!--  services-holder -->
             <div class="services-holder">
+                <?php $idx = 1;
+                $data_slides = carbon_get_post_meta(get_the_ID(), 'service_post'); ?>
                 <!-- services-item -->
-                <div class="services-item">
-                    <div class="serv-img lft-img">
-                        <div class="bg" style="background-image:url(<?php the_post_thumbnail_url(); ?>)"></div>
-                    </div>
-                    <div class="services-box-info rft-info">
-                        <h3 class="dec-text"><?php the_title(); ?></h3><br>
-                        <p><?php the_content(); ?></p>
-                    </div>
-                </div>
-                <!-- services-item  end-->
-                <!-- services-item  -->
-                <div class="services-item">
-                    <div class="serv-img rft-img">
-                        <div class="bg" style="background-image:url(<?php the_post_thumbnail_url(); ?>)"></div>
-                    </div>
-                    <div class="services-box-info lft-info">
-                        <h3 class="dec-text"><?php the_title(); ?></h3><br>
-                        <p><?php the_content(); ?></p>
-                    </div>
-                </div>
-                <!-- services-item  end-->
-                <!-- services-item  end-->
-                <div class="services-item">
-                    <div class="serv-img lft-img">
-                        <div class="bg" style="background-image:url(<?php the_post_thumbnail_url(); ?>)"></div>
-                    </div>
-                    <div class="services-box-info rft-info">
-                        <h3 class="dec-text"><?php the_title(); ?></h3><br>
-                        <p><?php the_content(); ?></p>
-                    </div>
-                </div>
-                <!-- services-item  end-->
+                <?php foreach ($data_slides as $slide) {
+                    if ($idx % 2 == 1) {
+                ?>
+                        <div class="services-item">
+                            <div class="serv-img lft-img">
+                                <div class="bg" style="background-image:url(<?php echo wp_get_attachment_image_url($slide['photo'], 'full') ?>)"></div>
+                            </div>
+                            <div class="services-box-info rft-info">
+                                <h3 class="dec-text"><?php echo $slide['title'] ?></h3><br>
+                                <p><?php echo $slide['text'] ?></p>
+                            </div>
+                        </div>
+                    <?php } else {
+                    ?>
+                        <div class="services-item">
+                            <div class="serv-img rft-img">
+                                <div class="bg" style="background-image:url(<?php echo wp_get_attachment_image_url($slide['photo'], 'full') ?>)"></div>
+                            </div>
+                            <div class="services-box-info lft-info">
+                                <h3 class="dec-text"><?php echo $slide['title'] ?></h3><br>
+                                <p><?php echo $slide['text'] ?></p>
+                            </div>
+                        </div>
+                <?php }
+                    $idx++;
+                } ?>
             </div>
             <!-- services-holder  end-->
         </div>

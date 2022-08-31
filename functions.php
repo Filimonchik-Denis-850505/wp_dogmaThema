@@ -1,4 +1,6 @@
-<?php    
+<?php
+
+require_once('inc/carbon-fields.php');
 
 function test_style_func() {
  	wp_enqueue_style( 'test_style', get_stylesheet_directory_uri() . '/css/style.css', array() );
@@ -12,6 +14,7 @@ function test_style_func() {
     wp_enqueue_script( 'test_scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery') );
     wp_add_inline_script( 'jquery', '$ = jQuery;', 'after' );
 }
+
 add_theme_support( 'custom-logo' );
 add_theme_support('post-thumbnails');
 add_theme_support('menus');

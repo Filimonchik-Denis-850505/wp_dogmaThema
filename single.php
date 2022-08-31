@@ -19,19 +19,15 @@ get_template_part('templates/headers/header-wrapper');
                             <a class="next-slide transition"><i class="fa fa-long-arrow-right"></i></a>
                             <a class="prev-slide transition"><i class="fa fa-long-arrow-left"></i></a>
                         </div>
+                        <?php
+                        $slider_slides = carbon_get_post_meta(get_the_ID(), 'slider1');
+                        ?>
                         <div class="custom-slider owl-carousel">
-                            <!-- 1 -->
-                            <div class="item">
-                                <?php the_post_thumbnail(); ?>
-                            </div>
-                            <!-- 2 -->
-                            <div class="item">
-                                <?php the_post_thumbnail(); ?>
-                            </div>
-                            <!-- 3 -->
-                            <div class="item">
-                                <?php the_post_thumbnail(); ?>
-                            </div>
+                            <?php foreach ($slider_slides as $slide) { ?>
+                                <div class="item">
+                                    <?php echo wp_get_attachment_image($slide['photo'], 'full'); ?>
+                                </div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
